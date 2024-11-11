@@ -1,6 +1,6 @@
 function getRecentTracks() {
     var username = "dopiture_";
-    var apiKey = "bde0ba3e62e4a99fe0c6a0374f774d0b";
+    var apiKey = "c1bf66eaa51b5b83a56fac50a122b8bf";
     var apiUrl = "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=" + username + "&api_key=" + apiKey + "&format=json";
   
     // Wykonaj zapytanie HTTP do Last.fm API
@@ -46,7 +46,7 @@ function getRecentTracks() {
   // Funkcja do pobierania informacji o użytkowniku i ilości scrobbli
   function getUserInfoAndScrobbles() {
     var username = "dopiture_";
-    var apiKey = "bde0ba3e62e4a99fe0c6a0374f774d0b";
+    var apiKey = "c1bf66eaa51b5b83a56fac50a122b8bf";
   
     // Zapytanie dla informacji o użytkowniku
     var userInfoUrl = "https://ws.audioscrobbler.com/2.0/?method=user.getInfo&user=" + username + "&api_key=" + apiKey + "&format=json";
