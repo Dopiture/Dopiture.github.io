@@ -91,6 +91,17 @@ footer {
         background-color: rgb(31, 31, 31);
 }
 
+.now-playing-container {
+    width: 100%; /* Take the full width of the container */
+    text-align: center; /* Center the text */
+    margin: 0 auto; /* Center the container */
+  }
+  
+#albumContainer, #trackInfo, #scrobblesInfo {
+    display: inline-block; /* Make these elements inline for centering */
+    vertical-align: top; /* Align elements to the top if they have different heights */
+}
+
 /*
 iframe {
     border-radius:12px
