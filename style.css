@@ -1,81 +1,103 @@
+* {
+    font-style: luminary;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(56, 56, 56) #000000;
+}
+
+
 body {
     color: white;
     margin: auto;
-    font-family: 'Source Code Pro', monospace;
-    overflow: auto;
-    background: linear-gradient(315deg, #0b0424 3%, #2d2159 38%, #695aa1 68%, #b1a7d4 98%);
-    animation: gradient 20s ease infinite;
-    background-size: 400% 400%;
-    background-attachment: fixed;
+    background-image: url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
-@keyframes gradient {
-    0% {
-        background-position: 0% 0%;
-    }
-    50% {
-        background-position: 100% 100%;
-    }
-    100% {
-        background-position: 0% 0%;
-    }
+header {
+    margin-top: 10%;
 }
-
-.wave {
-    background: rgb(255 255 255 / 25%);
-    border-radius: 1000% 1000% 0 0;
-    position: fixed;
-    width: 200%;
-    height: 12em;
-    animation: wave 10s -3s linear infinite;
-    transform: translate3d(0, 0, 0);
-    opacity: 0.8;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-}
-
-.wave:nth-of-type(2) {
-    bottom: -1.25em;
-    animation: wave 18s linear reverse infinite;
-    opacity: 0.8;
-}
-
-.wave:nth-of-type(3) {
-    bottom: -2.5em;
-    animation: wave 20s -1s reverse infinite;
-    opacity: 0.9;
-}
-
-@keyframes wave {
-    2% {
-        transform: translateX(1);
-    }
-    25% {
-        transform: translateX(-25%);
-    }
-    50% {
-        transform: translateX(-50%);
-    }
-    75% {
-        transform: translateX(-25%);
-    }
-    100% {
-        transform: translateX(1);
-    }
-}
-
-.now-playing-container {
-        width: 100%; /* Take the full width of the container */
-        text-align: center; /* Center the text */
-        margin: 0 auto; /* Center the container */
-      }
-      
-      #albumContainer, #trackInfo, #scrobblesInfo {
-        display: inline-block; /* Make these elements inline for centering */
-        vertical-align: top; /* Align elements to the top if they have different heights */
-      }
 
 h1 {
     text-align: center;
+    color: rgb(255, 255, 255);
 }
+
+h2 {
+    text-align: center;
+}
+
+.navi1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+  
+.navi2 {
+    float: right;
+    font-size: x-large;
+}
+  
+.navi2 a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.navi2 a:hover {
+    background-color: rgba(56, 56, 56, 0.506);
+}
+
+.socials {
+    display: inline;
+    padding: 15px;
+    
+}
+
+.info {
+    text-align: center;
+    color: rgb(103, 103, 103);
+}
+
+div.lista {
+    text-align: center;
+}
+
+.zainteresowania {
+    list-style-position: inside;
+}
+
+footer {
+    background-color: #000000;
+    color: rgb(103, 103, 103);
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+        width: 16px;
+        background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+        background-color: rgb(56, 56, 56);
+        border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+        background-color: rgb(31, 31, 31);
+}
+
+/*
+iframe {
+    border-radius:12px
+    width="500" height="152" 
+    frameBorder="0"
+    allowfullscreen="" 
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+    loading="lazy"
+}
+*/
