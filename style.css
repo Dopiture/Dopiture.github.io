@@ -4,7 +4,6 @@
     scrollbar-color: rgb(56, 56, 56) #000000;
 }
 
-
 body {
     color: white;
     margin: auto;
@@ -28,6 +27,17 @@ h2 {
     text-align: center;
 }
 
+a{
+    color: rgb(149, 149, 149);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .navi1 {
     list-style-type: none;
     margin: 0;
@@ -37,7 +47,7 @@ h2 {
   
 .navi2 {
     float: right;
-    font-size: x-large;
+    font-size: large;
 }
   
 .navi2 a {
@@ -69,11 +79,18 @@ div.lista {
 
 .zainteresowania {
     list-style-position: inside;
+    font-size: 120%;
 }
+
+.portfolio {
+    text-align: center;
+}
+
 
 footer {
     background-color: #000000;
     color: rgb(103, 103, 103);
+    text-align: center
 }
 
 /* scrollbar */
@@ -92,14 +109,14 @@ footer {
 }
 
 .now-playing-container {
-    width: 100%; /* Take the full width of the container */
-    text-align: center; /* Center the text */
-    margin: 0 auto; /* Center the container */
+    width: 100%; 
+    text-align: center; 
+    margin: 0 auto;
   }
   
 #albumContainer, #trackInfo, #scrobblesInfo {
-    display: inline-block; /* Make these elements inline for centering */
-    vertical-align: top; /* Align elements to the top if they have different heights */
+    display: inline-block; 
+    vertical-align: top; 
 }
 
 /*
